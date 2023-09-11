@@ -25,8 +25,10 @@ export class AppComponent {
             data: { errorMessage: error.error.detail }
           });
         }
-        console.error('Error fetching image:', error);
-        return throwError(() => error); // Adjusted this line
+        // console.error('Error fetching image:', error);
+        this.imageUrl = "";
+
+        return throwError(() => error); 
       })
     ).subscribe(
       (response: any) => {
