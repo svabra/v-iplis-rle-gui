@@ -1,0 +1,26 @@
+<h1>RLE - Consolidated Recognized Pictures</h1>
+<h3>An IPLIS Mock</h3>
+
+<h2>Recognized Ground Picture</h2>
+
+<button mat-flat-button (click)="refreshGroundPicture()">
+  <mat-icon>refresh</mat-icon> 
+  Refresh Ground Picture
+</button>
+
+<!-- Display the image -->
+<img *ngIf="imageUrl" [src]="imageUrl" alt="Ground Picture" class="my-image" >
+
+<h2>Recognized Electormagnetic Picture</h2>
+
+<button mat-flat-button>
+  <mat-icon>refresh</mat-icon> 
+  Refresh Electormagnetic Picture
+</button>
+
+<h2>Recognized Environmental Picture</h2>
+
+<button mat-flat-button>
+  <mat-icon>refresh</mat-icon> 
+  Refresh Environmental Picture
+</button>
